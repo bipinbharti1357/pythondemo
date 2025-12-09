@@ -1,0 +1,4 @@
+alie_and_bob_are_friends = True
+bob_and_charlie_are_friends = False
+
+print(alie_and_bob_are_friends,bob_and_charlie_are_friends)
