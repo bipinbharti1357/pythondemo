@@ -1,0 +1,34 @@
+@baseUrl = http://127.0.0.1:5000
+
+### Home (optional)
+GET {{baseUrl}}/
+
+### Get all todos
+GET {{baseUrl}}/todos
+
+### Add todo
+POST {{baseUrl}}/todos
+Content-Type: application/json
+
+{
+  "title": "Learn Flask"
+}
+
+### Add another todo
+POST {{baseUrl}}/todos
+Content-Type: application/json
+
+{
+  "title": "Build Android + Python app"
+}
+
+### Update todo (id = 1)
+PUT {{baseUrl}}/todos/1
+Content-Type: application/json
+
+{
+  "done": true
+}
+
+### Delete todo (id = 1)
+DELETE {{baseUrl}}/todos/1
